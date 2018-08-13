@@ -1,0 +1,5 @@
+- [X] Work with JSON data
+- [X] Use create-react-app to build a React project
+- [X] Understand and use React components
+- [X] Understand and use "props" in React
+- [X] Use Array.prototype.map to render a collection of components in React
