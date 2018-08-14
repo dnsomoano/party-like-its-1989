@@ -5,7 +5,7 @@ import MovieList from "./MovieList";
 
 class App extends Component {
   render() {
-    const title = "Best Movies of 1989";
+    const title = "Movies of 1989";
     return (
       <div className="App">
         <header className="App-header">

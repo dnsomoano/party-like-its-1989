@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: justify;
 }
 
 .App-logo {
@@ -8,10 +8,10 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #213124;
   height: 150px;
   padding: 20px;
-  color: white;
+  color: #1A1E1B;
 }
 
 .App-title {
@@ -22,7 +22,34 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
+body {
+  background-color: #98A29A;
+}
+
+.MovieList {
+  background-color: #A3BFA8;
+  color: #607B63;
+  border-radius: 0.8em;
+}
+
+p {
+  padding: 0.8em;
+  padding-bottom: 1em;
+  margin-bottom: 0em;
+  background-color: #F9F5DD;
+  border-radius: 0.8em;
+}
+
+li {
+  border-radius: 0.8em;
+}
+
+ul {
+  list-style: none;
+  margin-top: 8em;
+}
+
+/* @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+} */

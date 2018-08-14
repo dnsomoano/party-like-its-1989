@@ -7,16 +7,28 @@ class MovieList extends Component {
     return (
       <section className="MovieList">
         <ul>
-          {movies.results.map((movie, idx) => {
-            return (
-              <Movie
-                title={movie.title}
-                poster_path={movie.poster_path}
-                overview={movie.overview}
-                key={idx}
-              />
-            );
-          })}
+          {movies.results
+            .sort((a, b) => {
+              if (a.release_date < b.release_date) {
+                return -1;
+              } else if (a.release_date > b.release_date) {
+                return 1;
+              } else {
+                return 0;
+              }
+            })
+            .map((movie, idx) => {
+              return (
+                // mapped array tags must match json props
+                <Movie
+                  title={movie.title}
+                  poster_path={movie.poster_path}
+                  overview={movie.overview}
+                  release_date={movie.release_date}
+                  key={idx}
+                />
+              );
+            })}
         </ul>
       </section>
     );
